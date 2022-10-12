@@ -45,3 +45,9 @@ def delete_event():
 
 delete_event()
 
+mylist = list()
+for i in range(0, 70):
+    print(i)
+    print(i)
+if(i == 5) and (i == 9):
+    print("Fizz")
