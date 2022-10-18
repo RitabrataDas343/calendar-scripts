@@ -46,6 +46,6 @@ def get_event():
 
 print(get_event())
 
-# if event['summary'] != "Wells Fargo : WFT : Campus : NIT Durgapur : Interns":
+if event['summary'] != "Wells Fargo : WFT : Campus : NIT Durgapur : Interns":
             #     print(event['summary'] + " deleted.")
             #     service.events().delete(calendarId='primary', eventId=event['id']).execute()
