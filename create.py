@@ -31,14 +31,7 @@ def create_event(start_date, start_time, end_date, end_time, event_name):
         'recurrence' : [
             'RRULE:FREQ=DAILY;COUNT=1'
         ], 
-        'reminders':{
-            'useDefault' : False,
-            'overrides':[
-                {'method': 'email', 'minutes': 24*60},
-                {'method': 'popup', 'minutes': 10},
-            ],
-        },
-    }
+      
 
     creds = None
     if os.path.exists('token.json'):
