@@ -17,13 +17,8 @@ def create_event(start_date, start_time, end_date, end_time, event_name):
     start_time = datetime.datetime.strptime(start_time, '%I:%M%p').strftime('%H:%M:'+'00')
     end_time = datetime.datetime.strptime(end_time, '%I:%M%p').strftime('%H:%M:'+'00')
     
-    event = {
-        'summary' : event_name,
-        'location' : 'NIT Durgapur',
-        'start': {
-            'dateTime' : f'{start_date}T{start_time}',
-            'timeZone' : 'Asia/Kolkata',
-        },
+    
+       
         'end':{
             'dateTime' : f'{end_date}T{end_time}',
             'timeZone' : 'Asia/Kolkata',
