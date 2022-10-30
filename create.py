@@ -62,6 +62,12 @@ def create_event(start_date, start_time, end_date, end_time, event_name):
     except HttpError as error:
         print('An error occured: %s' % error)
         return "Couldn't create event"
+    except HttpError as error:
+        print('An error occured: %s' % error)
+        return "Couldn't create event"
+    except HttpError as error:
+        print('An error occured: %s' % error)
+        return "Couldn't create event"
 
 
         
